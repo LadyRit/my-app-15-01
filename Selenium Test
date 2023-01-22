@@ -8,9 +8,6 @@ node {
         sh "${mvnHome}/bin/mvn compile"  
     }
     stage('Test') { 
-        sh "${mvnHome}/bin/mvn test" 
-    }
-    stage('Package') { 
-        sh "${mvnHome}/bin/mvn package" 
+        sh "${mvnHome}/bin/mvn test"  
     }
 }
